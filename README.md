@@ -7,3 +7,4 @@ Responsive Front-End Mentor Challenge Using Pure HTML + CSS
 - Junior
 
 # Demo Site
+https://abdelmalik100.github.io/Huddle-Landing-Page-With-Curved-Sections/
