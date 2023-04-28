@@ -1,0 +1,358 @@
+/* Global Rules  */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* primary colors  */
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+    /* secondary colors */
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 40px 50px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--Very-Dark-Cyan);
+}
+
+/* ---------------------------------- */
+
+.container .section-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .section-1 .btn button {
+    border: 2px solid var(--Light-Pink);
+    outline: none;
+    background: none;
+    width: 120px;
+    height: 35px;
+    border-radius: 50px;
+    color: var(--Light-Pink);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.container .section-1 .btn button:hover {
+    opacity: 0.5;
+}
+
+.container .section-2 .text,
+.section-7 .text {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.container .section-2 .text p {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--Very-Dark-Cyan);
+    font-weight: 400;
+}
+
+.container .section-2 .text button,
+.section-7 .text button {
+    background-color: var(--Pink);
+    outline: none;
+    border: none;
+    width: 320px;
+    height: 60px;
+    border-radius: 50px;
+    margin-top: 25px;
+    font-weight: 800;
+    font-size: 15px;
+    color: var(--Very-Pale-Blue);
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 150px;
+}
+
+.container .section-2 .text button:hover,
+.section-7 .text button:hover {
+    opacity: 0.5;
+}
+
+.container .section-3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+.container .section-3 img {
+    width: 35px;
+}
+
+.container .section-3 h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    margin-top: 0;
+    color: var(--Very-Dark-Cyan);
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+.container .section-3 p {
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.section-4,
+.section-6 {
+    background-color: var(--Very-Pale-Blue);
+    position: relative;
+}
+
+.section-4 .top,
+.section-6 .top {
+    position: absolute;
+    top: -56%;
+    width: 100%;
+}
+
+.section-4 .bottom,
+.section-6 .bottom {
+    position: absolute;
+    bottom: -47%;
+    width: 100%;
+}
+
+.section-4 .container,
+.section-5 .container,
+.section-6 .container {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    gap: 150px;
+    align-items: center;
+}
+
+.section-4 .container .txt p,
+.section-5 .container .txt p,
+.section-6 .container .txt p {
+    width: 525px;
+}
+
+.section-4 .container .photo img,
+.section-5 .container .photo img,
+.section-6 .container .photo img {
+    width: 70%;
+}
+
+.section-5,
+.section-6,
+.section-7 {
+    margin-top: 200px;
+}
+
+.seciotn-8 {
+    background-color: var(--Very-Dark-Cyan);
+    padding: 100px 50px;
+    display: flex;
+    gap: 200px;
+    position: relative;
+}
+
+.seciotn-8 .footer-img {
+    width: 100%;
+    position: absolute;
+    background: white;
+    left: 0px;
+    top: -100px;
+}
+
+.seciotn-8 .left .footer-logo {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(500%) contrast(102%);
+    width: 200px;
+}
+
+.seciotn-8 .left p {
+    color: white;
+}
+
+.seciotn-8 .left .first img,
+.seciotn-8 .left .last img {
+    margin-right: 10px;
+}
+
+.seciotn-8 .left .first span,
+.seciotn-8 .left .last span {
+    color: white;
+}
+
+.seciotn-8 .left .first {
+    margin-top: 25px;
+}
+
+.seciotn-8 .left .last {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.seciotn-8 .left .social {
+    font-size: 35px;
+    color: white;
+}
+
+.seciotn-8 .left .social i {
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.seciotn-8 .left .social i:first-child:hover {
+    color: #3b5998;
+}
+
+.seciotn-8 .left .social i:nth-child(2):hover {
+    color: rgb(236, 31, 255)
+}
+
+.seciotn-8 .left .social i:last-child:hover {
+    color: #00acee;
+}
+
+.seciotn-8 .right h3 {
+    margin: 0;
+    color: white;
+}
+
+.seciotn-8 .right p {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.seciotn-8 .right .email input:first-child {
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
+.seciotn-8 .right .email input:last-child:valid {
+    margin-left: 10px;
+    height: 40px;
+    width: 120px;
+    FONT-WEIGHT: 600;
+    color: white;
+    background-color: var(--Pink);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.seciotn-8 .right .email input:last-child:hover {
+    background-color: hsl(321, 100%, 80%);
+    ;
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        padding: 40px;
+        margin: 0;
+    }
+
+    .container .section-1 img {
+        width: 50%;
+    }
+
+    .container .section-2 img {
+        width: 100%;
+    }
+
+    .container .section-2 .text p {
+        width: 100%;
+    }
+
+    .container .section-3 {
+        flex-direction: column;
+    }
+
+    .section-4 .container,
+    .section-6 .container {
+        flex-direction: column-reverse;
+        margin: 0;
+        text-align: center;
+    }
+
+    .section-5 .container {
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+    }
+
+    .section-4 .container .txt p,
+    .section-5 .container .txt p,
+    .section-6 .container .txt p {
+        width: 100%;
+    }
+
+    .section-4 .container .photo img,
+    .section-5 .container .photo img,
+    .section-6 .container .photo img {
+        width: 100%;
+    }
+
+    .section-4 .top,
+    .section-6 .top {
+        top: -45px;
+    }
+
+    .section-4 .bottom,
+    .section-6 .bottom {
+        bottom: -40px;
+    }
+
+    .seciotn-8 .footer-img {
+        top: 0;
+    }
+
+    .seciotn-8 {
+        flex-direction: column-reverse;
+    }
+
+    .seciotn-8 .right .email input:last-child:valid {
+        margin: 0;
+    }
+
+    .seciotn-8 .email {
+        text-align: right;
+    }
+
+    .seciotn-8 .right .email input:first-child {
+        width: 100%;
+    }
+
+    .seciotn-8 .left .first {
+        margin-top: 50px;
+    }
+
+    .seciotn-8 .left .last {
+        margin-bottom: 50px;
+    }
+}
